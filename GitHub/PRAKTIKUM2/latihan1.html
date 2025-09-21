@@ -1,0 +1,339 @@
+html 1
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Eksternal</title>
+    <!-- Menghubungkan file CSS eksternal -->
+    <link rel="stylesheet" href="latihan1.html" />
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Styling untuk heading */
+h1 {
+    color: #333;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin: 0 0 20px 0;
+}
+
+h2 {
+    color: #2196F3;
+    border-bottom: 2px solid #2196F3;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #FF9800;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Class selector */
+.highlight {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info-box {
+    background-color: #e7f3ff;
+    border: 1px solid #2196F3;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #2196F3;
+    border-bottom: 2px solid #2196F3;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #FF9800;
+}
+
+/* Styling untuk paragraf */
+p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Styling untuk list */
+ul {
+    background-color: white;
+    padding: 15px;
+    border-left: 4px solid #4CAF50;
+}
+
+    </style>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Selamat Datang di CSS Eksternal</h1>
+    <p>Halaman ini menggunakan CSS eksternal untuk styling.</p>
+
+    <div class="highlight">
+        <h2>Kenapa CSS Eksternal?</h2>
+        <ul>
+            <li>Memisahkan struktur (HTML) dan presentasi (CSS)</li>
+            <li>CSS dapat digunakan di multiple halaman</li>
+            <li>Lebih mudah maintenance</li>
+            <li>File HTML lebih bersih dan readable</li>
+        </ul>
+    </div>
+
+    <div class="info-box">
+        <h3>Cara Menghubungkan CSS</h3>
+        <p>Gunakan tag &lt;link&gt; di dalam &lt;head&gt;</p>
+        <p>Format: &lt;link rel="stylesheet" href="nama-file.css"&gt;</p>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Selector</title>
+  <link rel="stylesheet" href="Latihan 2.css" />
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+   color: #666;
+   line-height: 1.6;
+} 
+
+/* 2. CLASS SELECTOR - dimulai dengan titik (.) */
+.highlight {
+    background-color: #fff3cd;
+    padding: 10px;
+    border-left: 4px solid #ffc107;
+    margin: 10px 0;
+}
+
+.warning {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
+
+.border {
+    border: 2px solid #007bff;
+    border-radius: 5px;
+}
+
+/* 3. ID SELECTOR - dimulai dengan hash (#) */
+#special {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    font-weight: bold;
+    padding: 15px;
+    border: 2px solid #17a2b8;
+}
+
+/* 4. DESCENDANT SELECTOR - elemen di dalam elemen lain */
+.container h2 {
+    color: #28a745;
+    border-bottom: 2px solid #28a745;
+}
+
+.container p {
+    color: #495057;
+    margin-left: 20px;
+}
+
+.container .inner p {
+    color: #6f42c1;
+    font-style: italic;
+    margin-left: 40px;
+}
+
+/* 5. CHILD SELECTOR - anak langsung */
+.menu > li {
+    background-color: #e9ecef;
+    padding: 8px;
+    margin: 5px 0;
+    list-style-type: none;
+}
+
+.menu li li {
+    background-color: #f8f9fa;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+/* 6. PSEUDO-CLASS SELECTOR */
+.links a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid transparent;
+}
+
+.links a:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.links a:visited {
+    color: #6f42c1;
+}
+
+.links a:active {
+    background-color: #0056b3;
+}
+
+/* 7. ATTRIBUTE SELECTOR */
+input[type="text"] {
+    border: 2px solid #28a745;
+    padding: 8px;
+    margin: 5px;
+}
+
+input[type="email"] {
+    border: 2px solid #17a2b8;
+    padding: 8px;
+    margin: 5px;
+}
+
+input[type="password"] {
+    border: 2px solid #dc3545;
+    padding: 8px;
+    margin: 5px;
+}
+
+button[type="button"] {
+    background-color: #ffc107;
+    color: #212529;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: #e0a800;
+}
+
+/* 8. GROUPING SELECTOR - memilih multiple elemen */
+h4,
+h5,
+h6 {
+    color: #fd7e14;
+    font-family: Georgia, serif;
+    margin: 15px 0 5px 0;
+}
+
+/* 9. UNIVERSAL SELECTOR */
+* {
+    box-sizing: border-box;
+}
+
+/* 10. PSEUDO-ELEMENT SELECTOR */
+.container::before {
+    content: "💡";
+    font-size: 20px;
+}
+
+.warning::after {
+    content: "⚠";
+}
+  </style>
+</head>
+<body>
+  <h1>Belajar CSS Selector</h1>
+
+  <!-- Element Selector -->
+  <p>Ini adalah paragraf biasa yang menggunakan element selector.</p>
+
+  <!-- Class Selector -->
+  <p class="highlight">Paragraf ini menggunakan class "highlight".</p>
+  <p class="warning">Paragraf ini menggunakan class "warning".</p>
+  <p class="highlight">Paragraf lain dengan class "highlight" yang sama.</p>
+
+  <!-- ID Selector -->
+  <p id="special">
+    Paragraf ini menggunakan ID "special" (hanya boleh satu).
+  </p>
+
+  <!-- Multiple Classes -->
+  <p class="highlight border">
+    Paragraf dengan dua class: "highlight" dan "border".
+  </p>
+
+  <!-- Descendant Selector -->
+  <div class="container">
+    <h2>Heading di dalam container</h2>
+    <p>Paragraf di dalam container.</p>
+    <div class="inner">
+      <p>Paragraf di dalam inner container.</p>
+    </div>
+  </div>
+
+  <!-- Child Selector -->
+  <ul class="menu">
+    <li>
+      Menu Item 1
+      <ul>
+        <li>Sub Menu 1</li>
+        <li>Sub Menu 2</li>
+      </ul>
+    </li>
+    <li>Menu Item 2</li>
+    <li>Menu Item 3</li>
+  </ul>
+
+  <!-- Pseudo-class Selector -->
+  <div class="links">
+    <h3>Link Examples</h3>
+    <a href="#link1">Link Normal</a>
+    <a href="#link2">Link Kedua</a>
+    <a href="#link3">Link Ketiga</a>
+  </div>
+
+  <!-- Attribute Selector -->
+  <div class="forms">
+    <h3>Form Elements</h3>
+    <input type="text" placeholder="Text Input" />
+    <input type="email" placeholder="Email Input" />
+    <input type="password" placeholder="Password Input" />
+    <button type="button">Button</button>
+  </div>
+
+  <!-- Grouping Selector -->
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+</body>
+</html>

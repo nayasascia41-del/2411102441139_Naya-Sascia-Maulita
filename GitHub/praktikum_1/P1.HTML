@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Struktur HTML Dasar</title>
+    </head>
+    <body>
+        <!-- Ini adalah struktur HTML paling dasar -->
+        <h1>Selamat datang di HTML</h1>
+        <p> ini adalah halaman web pertama saya </p>
+        <!-- Heading dari H1 sampai H6 -->
+        <h1>ini adalah heading 1 (judul utama)</h1>
+        <h2>ini adalah heading 2 (sub judul)</h2>
+        <h3>ini adalah heading 3</h3>
+        <h4>ini adalah heading 4</h4>
+        <h5>ini adalah heading 5</h5>
+        <h6>ini adalah heading 6</h6>
+
+        <!-- Contoh penggunaan heading dalam struktur dokumen -->
+        <h1>Bab 1: Pengenalan Web</h1>
+        <h2>1.1 Apa itu HTML?</h2>
+        <h3>Definisi HTML</h3>
+        <h3>Sejarah HTML</h3>
+        <h2>1.2 Mengapa belajar HTML?</h2>
+        <h1>contoh paragraf dan text formatting</h1>
+
+      <!-- paragraf biasa-->
+      <p>
+        Ini adalah paragraf pertama. HTML adalah bahasa markup yang digunakan
+        untuk membuat halaman web.
+      </p>
+
+      <p>
+        Ini adalah paragraf kedua. Setiap paragraf akan otomatis diberi jarak oleh browser.
+     </p>
+<!-- Paragraf dengan text formatting -->
+    <p>
+        Dalam paragraf ini kita bisa menggunakan
+        <strong>text tebal (bold)</strong> dan <em>text miring (italic)</em>.
+    </p>
+
+    <p>
+        Kita juga bisa membuat text <u>bergaris bawah</u> dan <mark>highlight</mark>.
+    </p>
+
+    <!--Break line -->
+    <p>Baris pertama<br />Baris kedua dengan line break</p>
+
+    <!-- Horizontal rule -->
+    <hr />
+
+    <p>Garis horizontal diatas dibuat dengan tag hr.</p>
+    <h1>contoh link dalam HTML</h1>
+
+  <!-- Link eksternal -->
+  <h2>Link Eksternal</h2>
+  <p>
+    Kunjungi <a herf="https://www.google.com">Google</a> untuk mencari
+    informasi.
+  </p>
+  <p>
+    Belajar programming di <a href="https://www.w3schools.com">W3School</a>.
+    </p>
+
+<!-- Link dengan target black (buka di tab baru) -->
+ <p>
+    Buka <a href="https://github.com" target="_black">Github</a> di tab baru.
+</p>
+
+<!-- Link internal (ke file lain) -->
+    <h2>Link internal</h2>
+    <p>Kembali ke <a href="01-struktur-dasar.html">Struktur Dasar</a>.</p>
+    <p>Lihat contoh <a href="02-heading.html">Heading</a>.</p>
+
+    <!-- Link ke bagian dalam halaman yang sama -->
+    <h2>Link ke bagian halaman</h2>
+    <p><a href="#bawah">pergi ke bagian bawah</a></p>
+
+    <!-- Konten spacer -->
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+
+    <!-- Target link internal -->
+    <h2 id="bawah">Bagian Bawah Halaman</h2>
+    <p>Ini adalah bagian bawah halaman.</p>
+    <p><a href="#top">Kembali ke atas</a></p>
+    <!-- Gambar dengan alt text -->
+  <h2>Gambar Lokal</h2>
+  <img src="images/sample.jpg" alt="Contoh Gambar" width="300" />
+  <p>Gambar di atas adalah contoh gambar lokal dengan lebar 300px.</p>
+
+  <!-- Gambar dengan ukuran berbeda -->
+  <h2>Gambar dengan ukuran berbeda</h2>
+  <img src="images/sample.jpg" alt="Gambar Kecil" width="150" height="100" />
+  <img src="images/sample.jpg" alt="Gambar Sedang" width="250" height="178" />
+
+  <!-- Gambar dari internet -->
+  <h2>Gambar dari Internet</h2>
+  <img 
+    src="https://via.placeholder.com/300x200/4CAF58/FFFFFF?text=placeholder" 
+    alt="placeholder Image"
+    width="300"
+   />
+<!-- Gambar sebagai link -->
+    <h2>Gambar sebagai Link</h2>
+    <a href="https://www.google.com">
+      <img
+        src="https://via.placeholder.com/200x100/2196F3/FFFFFF?text=Click+Me"
+        alt="Klik gambar ini"
+      />
+    </a>
+
+    <!-- Figure dan figcaption -->
+    <h2>Gambar dengan Caption</h2>
+    <figure>
+       <img
+         src="https://via.placeholder.com/400x258/FF9800/FFFFFF?text=Beautiful+Sunset"
+         alt="Sunset"
+         width="400"
+       />
+       <figcaption>Pemandangan matahari terbenam yang indah</figcaption>
+     </figure>
+
+     <!-- Note: Buat folder images jika ingin menggunakan ganbar lokal -->
+     <p>
+       <em
+         >Note: Untuk gambar lokal, buatlah folder "images" di dalam folder ini 
+         dan masukkan file gambar (sample.jpg)</em
+       >
+     </p>
+     <h1>Contoh List dalam HTML</h1>
+
+  <!-- Unordered List (Bullet Points) -->
+  <h2>Unordered List (Bullet Points)</h2>
+  <h3>Bahasa Pemrograman Populer:</h3>
+  <ul>
+    <li>JavaScript</li>
+    <li>Python</li>
+    <li>Java</li>
+    <li>PHP</li>
+    <li>C++</li>
+  </ul>
+
+  <!-- Ordered List (Numbering) -->
+  <h2>Ordered List (Numbering)</h2>
+  <h3>Langkah-langkah Membuat Website:</h3>
+  <ol>
+    <li>Belajar HTML</li>
+    <li>Belajar CSS</li>
+    <li>Belajar JavaScript</li>
+    <li>Belajar Backend (PHP/Node.js)</li>
+    <li>Deploy ke hosting</li>
+  </ol>
+
+  <!-- Nested List -->
+  <h2>Nested List (List Bersarang)</h2>
+  <h3>Teknologi Web:</h3>
+  <ul>
+    <li>
+      Frontend
+      <ul>
+        <li>HTML</li>
+        <li>
+          CSS
+          <ol>
+            <li>CSS Dasar</li>
+            <li>CSS Framework (Bootstrap)</li>
+            <li>CSS Preprocessor (Sass)</li>
+          </ol>
+        </li>
+        <li>JavaScript</li>
+      </ul>
+    </li>
+    <li>
+      Backend
+      <ul>
+        <li>PHP</li>
+        <li>Node.js</li>
+        <li>Python</li>
+      </ul>
+    </li>
+    <li>
+      Database
+      <ul>
+        <li>MySQL</li>
+        <li>PostgreSQL</li>
+        <li>MongoDB</li>
+      </ul>
+    </li>
+  </ul>
+
+  <!-- Description List -->
+  <h2>Description List</h2>
+  <h3>Istilah dalam Web Development:</h3>
+  <dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language - bahasa markup untuk membuat struktur web</dd>
+
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets - bahasa untuk styling dan layout web</dd>
+
+    <dt>JavaScript</dt>
+    <dd>Bahasa pemrograman untuk membuat interaktivitas di web</dd>
+
+    <dt>Responsive Design</dt>
+    <dd>Desain web yang dapat menyesuaikan tampilan di berbagai ukuran layar</dd>
+  </dl>
+  <h1>Contoh Div dan Container</h1>
+
+  <!-- Div sebagai container -->
+  <h2>Div sebagai Container</h2>
+  <div>
+    <h3>Artikel Pertama</h3>
+    <p>Ini adalah isi artikel pertama yang dibungkus dalam div.</p>
+    <p>Div membantu mengelompokkan elemen-elemen yang terkait.</p>
+  </div>
+
+  <div>
+    <h3>Artikel Kedua</h3>
+    <p>Ini adalah isi artikel kedua dalam div terpisah.</p>
+    <p>Setiap div dapat berisi beberapa elemen HTML.</p>
+  </div>
+
+  <!-- Div dengan ID dan Class -->
+  <h2>Div dengan ID dan Class</h2>
+  <div id="header">
+    <h3>Header Section</h3>
+    <p>Div ini memiliki ID "header" untuk identifikasi unik.</p>
+  </div>
+
+  <div class="content">
+    <h3>Content Section</h3>
+    <p>Div ini memiliki class "content" yang bisa digunakan berkali-kali.</p>
+  </div>
+
+  <div class="content">
+    <h3>Content Section Lainnya</h3>
+    <p>Div ini juga menggunakan class "content" yang sama.</p>
+  </div>
+
+  <!-- Div untuk Layout -->
+  <h2>Div untuk Layout Sederhana</h2>
+  <div id="page">
+    <div id="top-header">
+      <h3>Website Header</h3>
+      <p>Logo dan navigasi biasanya di sini.</p>
+    </div>
+
+    <div id="navigation">
+      <h4>Navigation Menu</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div id="main-body">
+      <h4>Main Body Content</h4>
+      <p>Konten utama website berada di sini.</p>
+    </div>
+
+    <div id="footer">
+      <h4>Footer</h4>
+      <p>Copyright dan informasi kontak di footer.</p>
+    </div>
+  </div>
+
+  <!-- Nested Div -->
+  <h2>Nested Div (Div Bersarang)</h2>
+  <div id="wrapper">
+    <h3>Wrapper Container</h3>
+    <div class="sidebar">
+      <h4>Sidebar</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <h4>Main Content</h4>
+      <p>Ini adalah konten utama yang berada di dalam wrapper.</p>
+
+      <div class="article">
+        <h5>Sub Article</h5>
+        <p>Artikel kecil di dalam main content.</p>
+      </div>
+    </div>
+  </div>
+
+    </body>
+</html>

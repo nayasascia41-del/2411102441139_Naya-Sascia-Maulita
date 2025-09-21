@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profil Pribadi</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style untuk body dan container utama */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #0073e6;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.profile-photo {
+    flex: 1;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.profile-photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex: 2;
+}
+
+.profile-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.profile-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsiveness untuk perangkat mobile */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .profile-info {
+        flex: 1;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Profil Pribadi</h1>
+        </header>
+
+        <section class="profile">
+            <div class="profile-photo">
+                <img src="foto-profil.jpg" alt="Foto Profil">
+            </div>
+            <div class="profile-info">
+                <h2>Nama: Naya Sascia Maulita</h2>
+                <p>Profesional di bidang desain web dengan pengalaman lebih dari 5 tahun. Passionate tentang UX/UI dan pengembangan aplikasi web.</p>
+                <p>Email: nayasacia@example.com</p>
+                <p>Website: www.nayasascia.com</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Naya Sascia Maulita. Semua hak dilindungi.</p>
+        </footer>
+    </div>
+</body>
+</html>

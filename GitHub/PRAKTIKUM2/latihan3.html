@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Properti Text CSS</title>
+  <link rel="stylesheet" href="p23.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* * Base */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f5f5f5;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  background: linear-gradient(45deg, #3498db, #2c3e50);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  color: #34495e;
+  border-bottom: 2px solid #3498db;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
+
+.section {
+  background: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+/* Decoration */
+.decoration-none { text-decoration: none; }
+.decoration-underline { text-decoration: underline; text-decoration-color: #3498db; }
+.decoration-overline { text-decoration: overline; text-decoration-color: #e74c3c; }
+.decoration-through { text-decoration: line-through; text-decoration-color: #95a5a6; }
+.decoration-multiple { text-decoration: underline overline; text-decoration-color: #9b59b6; }
+
+/* Transform */
+.transform-none { text-transform: none; }
+.transform-uppercase { text-transform: uppercase; color: #e74c3c; font-weight: bold; }
+.transform-lowercase { text-transform: lowercase; color: #3498db; }
+.transform-capitalize { text-transform: capitalize; color: #27ae60; font-weight: 600; }
+
+/* Align */
+.align-left { text-align: left; }
+.align-center { text-align: center; background: #ecf0f1; padding: 10px; }
+.align-right { text-align: right; background: #fdeaa7; padding: 10px; }
+.align-justify { text-align: justify; background: #e8f5e8; padding: 15px; border-left: 4px solid #27ae60; }
+
+/* Font Family */
+.font-serif { font-family: "Times New Roman", serif; }
+.font-sans { font-family: Arial, sans-serif; }
+.font-mono { font-family: "Courier New", monospace; background:#f8f9fa; padding:5px; }
+.font-custom { font-family: 'Roboto', sans-serif; color:#e74c3c; }
+
+/* Font Size */
+.size-small { font-size:12px; }
+.size-normal { font-size:16px; }
+.size-large { font-size:24px; }
+.size-xlarge { font-size:32px; }
+.size-em { font-size:1.5em; }
+.size-rem { font-size:1.2rem; }
+
+/* Font Weight */
+.weight-thin { font-weight:100; }
+.weight-normal { font-weight:400; }
+.weight-bold { font-weight:700; }
+.weight-bolder { font-weight:bolder; }
+.weight-900 { font-weight:900; }
+
+/* Font Style */
+.style-normal { font-style:normal; }
+.style-italic { font-style:italic; }
+.style-oblique { font-style:oblique; }
+
+/* Line Height */
+.line-small { line-height:1.2; background:#ffebee; padding:10px; }
+.line-normal { line-height:1.6; background:#e3f2fd; padding:10px; }
+.line-large { line-height:2; background:#f3e5f5; padding:10px; }
+
+/* Letter Spacing */
+.ls-tight { letter-spacing:-1px; font-weight:bold; }
+.ls-normal { letter-spacing:normal; }
+.ls-wide { letter-spacing:3px; text-transform:uppercase; font-weight:bold; color:#8e44ad; }
+
+/* Word Spacing */
+.ws-normal { word-spacing:normal; }
+.ws-wide { word-spacing:10px; background:#fff3e0; padding:10px; }
+
+/* Shadow */
+.shadow-simple { text-shadow: 2px 2px 4px rgba(0,0,0,.3); font-size:20px; font-weight:bold; }
+.shadow-colored { text-shadow: 3px 3px 0 #3498db; color:#2c3e50; font-size:18px; font-weight:bold; }
+.shadow-multiple { text-shadow: 1px 1px 0 #e74c3c, 2px 2px 0 #f39c12, 3px 3px 0 #f1c40f, 4px 4px 0 #27ae60; color:#2c3e50; font-size:24px; font-weight:bold; }
+.shadow-glow { text-shadow: 0 5px 5px #3498db, 0 0 10px #3498db, 0 0 15px #3498db, 0 0 20px #3498db; color:#2c3e50; font-size:22px; font-weight:bold; text-align:center; }
+
+  </style>
+</head>
+<body>
+  <h1>Belajar Properti Text CSS</h1>
+
+  <!-- Font Family -->
+  <div class="section">
+    <h2>Font Family</h2>
+    <p class="font-serif">Ini menggunakan font serif (Times New Roman).</p>
+    <p class="font-sans">Ini menggunakan font sans-serif (Arial).</p>
+    <p class="font-mono">Ini menggunakan font monospace (Courier).</p>
+    <p class="font-custom">Ini menggunakan font custom dari Google Fonts.</p>
+  </div>
+
+  <!-- Font Size -->
+  <div class="section">
+    <h2>Font Size</h2>
+    <p class="size-small">Text kecil (12px)</p>
+    <p class="size-normal">Text normal (16px)</p>
+    <p class="size-large">Text besar (24px)</p>
+    <p class="size-xlarge">Text sangat besar (32px)</p>
+    <p class="size-em">Text dengan ukuran em (1.5em)</p>
+    <p class="size-rem">Text dengan ukuran rem (1.2rem)</p>
+  </div>
+
+  <!-- Font Weight -->
+  <div class="section">
+    <h2>Font Weight</h2>
+    <p class="weight-thin">Text tipis (font-weight: 100)</p>
+    <p class="weight-normal">Text normal (font-weight: normal)</p>
+    <p class="weight-bold">Text tebal (font-weight: bold)</p>
+    <p class="weight-bolder">Text lebih tebal (font-weight: bolder)</p>
+    <p class="weight-900">Text sangat tebal (font-weight: 900)</p>
+  </div>
+
+  <!-- Font Style -->
+  <div class="section">
+    <h2>Font Style</h2>
+    <p class="style-normal">Text normal</p>
+    <p class="style-italic">Text miring (italic)</p>
+    <p class="style-oblique">Text oblique</p>
+  </div>
+
+  <!-- Text Decoration -->
+  <div class="section">
+    <h2>Text Decoration</h2>
+    <p class="decoration-none">Text tanpa dekorasi</p>
+    <p class="decoration-underline">Text dengan garis bawah</p>
+    <p class="decoration-overline">Text dengan garis atas</p>
+    <p class="decoration-through">Text dengan garis coret</p>
+    <p class="decoration-multiple">Text dengan multiple decoration</p>
+  </div>
+
+  <!-- Text Transform -->
+  <div class="section">
+    <h2>Text Transform</h2>
+    <p class="transform-none">Text Transform None</p>
+    <p class="transform-uppercase">text transform uppercase</p>
+    <p class="transform-lowercase">TEXT TRANSFORM LOWERCASE</p>
+    <p class="transform-capitalize">text transform capitalize</p>
+  </div>
+
+  <!-- Text Align -->
+  <div class="section">
+    <h2>Text Align</h2>
+    <p class="align-left">Text rata kiri (default)</p>
+    <p class="align-center">Text rata tengah</p>
+    <p class="align-right">Text rata kanan</p>
+    <p class="align-justify">
+      Text justify - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+      enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+    </p>
+  </div>
+
+  <!-- Line Height -->
+  <div class="section">
+    <h2>Line Height</h2>
+    <p class="line-height-small">
+      Line height kecil (1.2) - Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua.
+    </p>
+    <p class="line-height-normal">
+      Line height normal (1.6) - Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua.
+    </p>
+    <p class="line-height-large">
+      Line height besar (2.0) - Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua.
+    </p>
+  </div>
+
+  <!-- Letter Spacing -->
+  <div class="section">
+    <h2>Letter Spacing</h2>
+    <p class="letter-spacing-tight">Letter spacing rapat (-1px)</p>
+    <p class="letter-spacing-normal">Letter spacing normal</p>
+    <p class="letter-spacing-wide">Letter spacing lebar (3px)</p>
+  </div>
+
+  <!-- Word Spacing -->
+  <div class="section">
+    <h2>Word Spacing</h2>
+    <p class="word-spacing-normal">Word spacing normal antar kata</p>
+    <p class="word-spacing-wide">Word spacing lebar antar kata</p>
+  </div>
+
+  <!-- Text Shadow -->
+  <div class="section">
+    <h2>Text Shadow</h2>
+    <p class="shadow-simple">Text dengan shadow sederhana</p>
+    <p class="shadow-colored">Text dengan shadow berwarna</p>
+    <p class="shadow-multiple">Text dengan multiple shadow</p>
+    <p class="shadow-glow">Text dengan efek glow</p>
+  </div>
+</body>
+</html>
