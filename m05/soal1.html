@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 1: Seleksi Nilai</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .container { max-width: 600px; margin: 0 auto; border: 1px solid #ccc; padding: 20px; border-radius: 8px; }
+        input, button { padding: 10px; margin-top: 5px; margin-bottom: 10px; width: 100%; box-sizing: border-box; }
+        button { background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+        #hasil1 { font-weight: bold; margin-top: 15px; padding: 10px; border: 1px dashed #4CAF50; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>1. Seleksi Nilai, Huruf, dan Keterangan</h2>
+    <label for="inputNilai1">Masukkan Nilai (0-100):</label>
+    <input type="number" id="inputNilai1" min="0" max="100" placeholder="Contoh: 85">
+    <button onclick="hitungNilai()">Tampilkan Hasil</button>
+    
+    <div id="hasil1">Hasil akan ditampilkan di sini.</div>
+</div>
+
+<script>
+    function hitungNilai() {
+        // Ambil nilai dari input, pastikan diubah ke integer
+        const nilai = parseInt(document.getElementById('inputNilai1').value);
+        let huruf, keterangan;
+        
+        // Cek apakah nilai valid (antara 0-100)
+        if (isNaN(nilai) || nilai < 0 || nilai > 100) {
+            document.getElementById('hasil1').innerHTML = "⚠️ Masukkan nilai yang valid (0-100).";
+            return;
+        }
+
+        // Logika Seleksi Nilai
+        if (nilai >= 80) {
+            huruf = "A";
+            keterangan = "Lulus";
+        } else if (nilai >= 75) {
+            huruf = "AB";
+            keterangan = "Lulus";
+        } else if (nilai >= 70) {
+            huruf = "B";
+            keterangan = "Lulus";
+        } else if (nilai >= 65) {
+            huruf = "BC";
+            keterangan = "Lulus";
+        } else if (nilai >= 60) {
+            huruf = "C";
+            keterangan = "Lulus";
+        } else if (nilai >= 50) {
+            huruf = "D";
+            keterangan = "Tidak Lulus";
+        } else { // nilai 0-49
+            huruf = "E";
+            keterangan = "Tidak Lulus";
+        }
+
+        // Tampilkan hasil
+        document.getElementById('hasil1').innerHTML = 
+            `Nilai Anda: **${nilai}**<br>` +
+            `Nilai Huruf: **${huruf}**<br>` +
+            `Keterangan: **${keterangan}**`;
+    }
+</script>
+
+</body>
+</html>

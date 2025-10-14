@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 2: Perulangan Input</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .container { max-width: 600px; margin: 0 auto; border: 1px solid #ccc; padding: 20px; border-radius: 8px; margin-top: 20px; }
+        button { padding: 10px; margin-top: 10px; width: 100%; box-sizing: border-box; background-color: #008CBA; color: white; border: none; cursor: pointer; }
+        #hasil2 { margin-top: 15px; padding: 10px; border: 1px dashed #008CBA; background-color: #f0f8ff; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>2. Perulangan Berdasarkan Input</h2>
+    <p>Klik tombol di bawah untuk memasukkan jumlah perulangan.</p>
+    <button onclick="jalankanPerulangan()">Jalankan Perulangan</button>
+    
+    <div id="hasil2">Hasil perulangan akan ditampilkan di sini.</div>
+</div>
+
+<script>
+    function jalankanPerulangan() {
+        // Minta input dari pengguna (seperti dari keyboard/prompt)
+        const inputJumlah = prompt("Masukkan jumlah perulangan yang diinginkan (misal: 10):");
+        
+        // Konversi input ke bilangan bulat
+        const jumlahPerulangan = parseInt(inputJumlah);
+        let hasilOutput = "";
+
+        // Cek apakah input adalah angka positif
+        if (isNaN(jumlahPerulangan) || jumlahPerulangan <= 0) {
+            document.getElementById('hasil2').innerHTML = "⚠️ Masukkan angka positif yang valid untuk perulangan.";
+            return;
+        }
+
+        // Logika Perulangan (menggunakan loop for)
+        for (let i = 1; i <= jumlahPerulangan; i++) {
+            hasilOutput += `Ini adalah tulisan ke-${i}.\n`;
+        }
+
+        // Tampilkan hasil
+        document.getElementById('hasil2').innerHTML = 
+            `Anda meminta **${jumlahPerulangan}** kali perulangan.<br><br>` + hasilOutput;
+    }
+</script>
+
+</body>
+</html>

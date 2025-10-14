@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a6e7c4; /* Warna latar belakang hijau muda seperti di contoh */
+}
+
+#wrapper {
+    width: 900px; 
+    margin: auto;
+    text-align: center;
+}
+
+/* Menghilangkan list-style default */
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block; /* Membuat menu center */
+}
+
+/* Mengatur menu utama menjadi horizontal */
+#menu ul li {
+    display: block;
+    position: relative;
+    float: left;
+}
+
+/* Menyembunyikan submenu secara default */
+#menu li ul {
+    display: none;
+}
+
+/* Gaya untuk link pada menu utama */
+#menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    background: #2c5c45; /* Warna hijau tua untuk menu */
+    white-space: nowrap;
+    border-right: 1px solid #a6e7c4;
+}
+
+/* Gaya saat kursor diarahkan ke menu utama */
+#menu ul li a:hover {
+    background: #6fbf97; /* Warna hijau lebih terang saat hover */
+}
+
+/* Menampilkan submenu saat menu utama di-hover */
+#menu li:hover ul {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+}
+
+/* Mengatur tata letak submenu */
+#menu li:hover li {
+    float: none;
+    font-size: 12px;
+}
+
+/* Gaya untuk link pada submenu */
+#menu li:hover li a {
+    background: #3a4a44; /* Warna latar submenu */
+    text-align: left; /* Teks rata kiri di submenu */
+    border-top: 1px solid #777;
+}
+
+/* Gaya saat kursor diarahkan ke submenu */
+#menu li:hover li a:hover {
+    background: #6fbf97; /* Warna hover submenu sama dengan menu utama */
+}
